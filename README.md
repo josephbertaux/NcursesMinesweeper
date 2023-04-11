@@ -2,7 +2,10 @@
 
 An implentation of Minesweeper in C using [NCURSES](https://tldp.org/HOWTO/NCURSES-Programming-HOWTO/index.html).
 
-Minesweeper is the best game ever and C is the best programming language ever, and many implementations exist. This is my implementation. There are many like it, but this one is mine.
+Minesweeper is the best game ever.
+C is the best programming language ever.
+
+Naturally, many implementations of Minesweeper in C exist. This is my implementation. There are many like it, but this one is mine.
 
 This uses vim controls:
 * h moves left
