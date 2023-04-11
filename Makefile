@@ -9,9 +9,9 @@ OBJ = o
 EXE = exe
 
 CMP = g++
-FLAGS = `root-config --cflags`
-INCS = -I`root-config --incdir` #already included with root-config --cflags
-LIBS = `root-config --evelibs` -lTMVA -lTMVAGui -lRooFitCore -lRooFitMore -lRooFit
+FLAGS =
+INCS =
+LIBS = -lncurses
 
 SRCS = $(shell find $(SRC_DIR) -name *.$(CXX))
 
