@@ -1,13 +1,17 @@
-# cpp-template
-Template repository containing my preferred Makefile. It expects:
+# Minesweeper
 
-	a /src subdirectory contains source codes, possibly organized into other subdirectories
+An implentation of Minesweeper in C using [NCURSES](https://tldp.org/HOWTO/NCURSES-Programming-HOWTO/index.html).
 
-When a user runs "make", the Makefile searches /src for files with a given extension (.cpp by default). It determines whether a source file should be compiled into an executable by the presence of a "main" function (searches the verbatim string "int main") to organize dependency of object compilation
+Minesweeper is the best game ever and C is the best programming language ever, and many implementations exist. This is my implementation. There are many like it, but this one is mine.
 
-After it does this, it calls "rm -rf" on the following to subdirectories and rebuilds them with the appropriate files:
+This uses vim controls:
+..* h moves left
+..* j moves down
+..* k moves up
+..* l moves right
 
-	a /bld subdirecotry containing object files
-	a /exe subdirectory containing fully compiled executables
+You can buffer the number of tiles to move similarly to vim (e.g. 20l, 4h, ..). The characters your are buffering is shown in the buffer line at the botton of the screen.
 
-The substructure of the /bld and /exe subdirectories mimics the structure of /src; that is, object and executable files are named with the path relative to /src for each source file, so further subdirectories are created.
+You can type commands similarly to vim by typing :, and then the command. We'll see what functions I end up implementing; it would be cool to show probabilities on the remaining tiles.
+
+Press 'f' to flag a tile as a mine and press 'a' to reveal a tile as a mine.
